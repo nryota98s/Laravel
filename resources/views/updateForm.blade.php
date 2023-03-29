@@ -26,9 +26,6 @@
     {!! Form::input('text', 'userName', Auth:: user()->name, ['class' => 'form-control', 'required','placeholder' => 'ユーザーネーム']) !!}
 
     {!! Form::input('text', 'upPost', $post->contents, ['required', 'class' => 'form-control']) !!}
-
-
-
   </div>
 
   <button type="submit" class="btn btn-primary pull-right">更新</button>
