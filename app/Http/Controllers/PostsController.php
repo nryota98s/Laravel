@@ -23,9 +23,13 @@ class PostsController extends Controller
     public function create(Request $request)
     {
         $this->validate($request, [
-            'userName' => 'required|max:100',
-            'newPost' => 'required|max:100',
+            'userName' => ['required', 'regex:/^[^　\s]+$/u', 'string', 'max:255'],
+            'newPost' => ['required', 'regex:/^[^　\s]+$/u', 'string', 'max:100'],
         ]);
+
+
+
+
 
         $name = $request->input('userName');
         $post = $request->input('newPost');
@@ -58,7 +62,8 @@ class PostsController extends Controller
     public function update(Request $request)
     {
         $this->validate($request, [
-            'upPost' => 'required|max:100',
+            'userName' => ['required', 'regex:/^[^　\s]+$/u', 'string', 'max:255'],
+            'upPost' => ['required', 'regex:/^[^　\s]+$/u', 'string', 'max:100'],
         ]);
         $name = $request->input('userName');
         $id = $request->input('id');

@@ -23,7 +23,7 @@
 
   <div class="form-group">
     {!! Form::hidden('id', $post->id) !!}
-    {!! Form::input('text', 'userName', Auth:: user()->name, ['class' => 'form-control', 'required','placeholder' => 'ユーザーネーム']) !!}
+    {!! Form::input('text', 'userName',$post->user_name, ['class' => 'form-control', 'required','placeholder' => 'ユーザーネーム']) !!}
 
     {!! Form::input('text', 'upPost', $post->contents, ['required', 'class' => 'form-control']) !!}
   </div>

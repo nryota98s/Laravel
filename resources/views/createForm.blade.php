@@ -19,7 +19,7 @@
 
   <div class="form-group">
 
-    {!! Form::input('text', 'userName', Auth:: user()->name, ['class' => 'form-control', 'required','placeholder' => 'ユーザーネーム']) !!}
+    {!! Form::input('text', 'userName','', ['class' => 'form-control', 'required','placeholder' => 'ユーザーネーム']) !!}
 
 
     {!! Form::input('text', 'newPost', null, ['required', 'class' => 'form-control', 'placeholder' => '投稿内容','value'=>"{{ old('newPost') }}"]) !!}

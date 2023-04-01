@@ -119,6 +119,10 @@ return [
     'attributes' => [
         'newPost' => '投稿内容',
         'upPost' => '変更する投稿内容',
+        'email' => 'メールアドレス',
+        'password' => 'パスワード',
+        'name' => 'ユーザー名',
+        'userName' => 'ユーザー名'
 
     ],
 
